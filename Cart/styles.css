@@ -1,0 +1,239 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #FBDB93; /* Light yellow background */
+  }
+  
+  header {
+    background-color: #BE5B50; /* Rusty red header */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .wishlist {
+    font-family: 'Playfair Display', serif; /* Decorative font */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-bar {
+    padding: 8px 12px;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .nav-link.button {
+    background-color: #8A2D3B; /* Dark red button background */
+  }
+  
+  .nav-link.button:hover {
+    background-color: #641B2E; /* Deep red background on hover */
+    color: #DDEB9D; /* Light green text on hover */
+  }
+  
+  .cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-icon {
+    width: 40px; /* Larger size for better visibility */
+    height: 40px;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+    background-color: #FAF6E9;
+  }
+  
+  .product-card {
+    background-color: #FFFDF6;
+    border: 2px solid #DDEB9D;
+    border-radius: 12px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(100, 27, 46, 0.2);
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .like-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #8A2D3B;
+    transition: color 0.3s;
+  }
+  
+  .like-btn:hover {
+    color: #BE5B50;
+  }
+  
+  .product-card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #641B2E;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .rating {
+    font-size: 16px;
+    color: gold;
+    margin-bottom: 10px;
+  }
+
+  .cart-btn {
+    background-color: #8A2D3B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cart-btn:hover {
+    background-color: #641B2E;
+  }
+
+  .site-footer {
+    background-color: #641B2E;
+    color: #FFFDF6;
+    padding: 40px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-about h3,
+  .footer-links h3,
+  .footer-contact h3 {
+    color: #FBDB93;
+    margin-bottom: 10px;
+  }
+  
+  .footer-about p,
+  .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-links a {
+    color: #FFFDF6;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13px;
+    border-top: 1px solid #8A2D3B;
+    padding-top: 10px;
+  }
+  
